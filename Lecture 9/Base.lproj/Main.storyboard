@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,23 +15,23 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Lecture_9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mtU-ty-5OR">
-                                <rect key="frame" x="163" y="191" width="51" height="31"/>
+                                <rect key="frame" x="135.5" y="191" width="51" height="31"/>
                                 <connections>
                                     <action selector="someSwitch:" destination="BYZ-38-t0r" eventType="valueChanged" id="tQi-ub-gvX"/>
                                 </connections>
                             </switch>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch выключен" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-wg-QZk">
-                                <rect key="frame" x="119.5" y="120" width="136.5" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Switch false" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z85-wg-QZk">
+                                <rect key="frame" x="114" y="120" width="92.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8qO-49-JlS">
-                                <rect key="frame" x="240" y="600" width="115" height="47"/>
+                                <rect key="frame" x="185" y="501" width="115" height="47"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
                                 <state key="normal" title="Далее &gt;">
                                     <color key="titleColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -55,35 +55,37 @@
                     <connections>
                         <outlet property="labelOfSwitch" destination="Z85-wg-QZk" id="OwK-Xj-n1T"/>
                         <outlet property="nextButton" destination="8qO-49-JlS" id="jo5-2V-M0U"/>
+                        <outlet property="someSwitch" destination="mtU-ty-5OR" id="kDm-Es-oLF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="109" y="22"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="0mf-tK-Fmb">
             <objects>
                 <viewController id="JGs-M7-8E1" customClass="SecondViewController" customModule="Lecture_9" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ct4-SN-Cyz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5f-Or-pth">
-                                <rect key="frame" x="20" y="210" width="110" height="30"/>
+                                <rect key="frame" x="20" y="210" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="dk6-Kj-mWZ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="QuQ-0P-ELc"/>
                                 </constraints>
-                                <state key="normal" title="Hide Slider"/>
+                                <state key="normal" title="Hide"/>
                                 <connections>
                                     <action selector="hideSliderButton:" destination="JGs-M7-8E1" eventType="touchUpInside" id="hjj-sB-fIr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUh-k8-YmY">
-                                <rect key="frame" x="132.5" y="210" width="110" height="30"/>
+                                <rect key="frame" x="120" y="210" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="Fro-8V-3A0"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="7tU-Lh-g83"/>
                                 </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -91,27 +93,24 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odj-xV-RXr">
-                                <rect key="frame" x="255" y="265" width="90" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="90" id="qOV-Ap-VIR"/>
-                                </constraints>
+                                <rect key="frame" x="255" y="265" width="10.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ0-AL-Efr">
-                                <rect key="frame" x="245" y="210" width="110" height="30"/>
+                                <rect key="frame" x="220" y="210" width="80" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="q8z-1W-yZ4"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="80" id="bcJ-Qb-8ZQ"/>
                                 </constraints>
-                                <state key="normal" title="Click to update"/>
+                                <state key="normal" title="Update"/>
                                 <connections>
                                     <action selector="updateButton:" destination="JGs-M7-8E1" eventType="touchUpInside" id="67e-S9-HZF"/>
                                 </connections>
                             </button>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-50" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="vcG-ss-6xH">
-                                <rect key="frame" x="28" y="430" width="319" height="31"/>
+                                <rect key="frame" x="28" y="430" width="264" height="31"/>
                                 <connections>
                                     <action selector="someSliderAction:" destination="JGs-M7-8E1" eventType="valueChanged" id="wMM-GU-atb"/>
                                 </connections>
@@ -144,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZp-CM-q35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1438" y="127"/>
+            <point key="canvasLocation" x="938" y="38"/>
         </scene>
     </scenes>
 </document>

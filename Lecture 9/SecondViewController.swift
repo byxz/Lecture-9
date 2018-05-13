@@ -21,18 +21,15 @@ class SecondViewController: UIViewController {
         hiddenSlider()
     }
     @IBAction func someSliderAction(_ sender: UISlider) {
-        //Приводим к Инт, чтоб красивые числа были
-        labelOfSlider.text = "\(Int(sender.value))"
-        buttonOfSldeConstraint.constant = CGFloat(sender.value)
+        updateValues()
     }
     @IBAction func updateButton(_ sender: UIButton) {
-        buttonOfSldeConstraint.constant = 0
         someSlider.value = 0
-        labelOfSlider.text = "0"
+        updateValues()
     }
     
     @IBAction func dissMissButton(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        dismiss(animated: true)
     }
     
     override func viewDidLoad() {
@@ -42,9 +39,13 @@ class SecondViewController: UIViewController {
     func hiddenSlider() {
         if !someSlider.isHidden {
             someSlider.alpha = 0
-            UIView.animate(withDuration: 0.2, delay: 3, options: [], animations: {
+            UIView.animate(withDuration: 0.2, delay: 3, animations: {
                 self.someSlider.alpha = 1
             })
         }
+    }
+    func updateValues() {
+        labelOfSlider.text = "\(Int(someSlider.value))"
+        buttonOfSldeConstraint.constant = CGFloat(someSlider.value)
     }
 }

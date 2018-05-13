@@ -12,21 +12,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var labelOfSwitch: UILabel!
     @IBAction func someSwitch(_ sender: UISwitch) {
-        if sender.isOn {
-            labelOfSwitch.text = "Switch включен"
-            nextButton.isHidden = false
-        } else {
-            labelOfSwitch.text = "Switch выключен"
-            nextButton.isHidden = true
-        }
+        
+        let isOn = sender.isOn
+        labelOfSwitch.text = "Switch \(isOn)"
+        nextButton.isHidden = !isOn
     }
+    @IBOutlet var someSwitch: UISwitch!
     
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        nextButton.isHidden = true
+        nextButton.isHidden = !someSwitch.isOn
         
     }
 }
