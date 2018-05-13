@@ -69,10 +69,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P5f-Or-pth">
-                                <rect key="frame" x="112.5" y="150" width="150" height="30"/>
+                                <rect key="frame" x="20" y="210" width="110" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="1ii-H7-SZ7"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="dk6-Kj-mWZ"/>
                                 </constraints>
                                 <state key="normal" title="Hide Slider"/>
                                 <connections>
@@ -80,63 +80,64 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUh-k8-YmY">
-                                <rect key="frame" x="112.5" y="210" width="150" height="30"/>
+                                <rect key="frame" x="132.5" y="210" width="110" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="tC9-4X-X2n"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="Fro-8V-3A0"/>
                                 </constraints>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="dissMissButton:" destination="JGs-M7-8E1" eventType="touchUpInside" id="ok2-V0-csx"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-50" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="vcG-ss-6xH">
-                                <rect key="frame" x="28" y="400" width="319" height="31"/>
-                                <connections>
-                                    <action selector="someSliderAction:" destination="JGs-M7-8E1" eventType="valueChanged" id="wMM-GU-atb"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odj-xV-RXr">
-                                <rect key="frame" x="112.5" y="320" width="150" height="21"/>
+                                <rect key="frame" x="255" y="265" width="90" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="0sd-pI-RB7"/>
+                                    <constraint firstAttribute="width" constant="90" id="qOV-Ap-VIR"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SZ0-AL-Efr">
-                                <rect key="frame" x="112.5" y="270" width="150" height="30"/>
+                                <rect key="frame" x="245" y="210" width="110" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="RCB-fe-RGe"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="110" id="q8z-1W-yZ4"/>
                                 </constraints>
                                 <state key="normal" title="Click to update"/>
                                 <connections>
                                     <action selector="updateButton:" destination="JGs-M7-8E1" eventType="touchUpInside" id="67e-S9-HZF"/>
                                 </connections>
                             </button>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-50" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="vcG-ss-6xH">
+                                <rect key="frame" x="28" y="430" width="319" height="31"/>
+                                <connections>
+                                    <action selector="someSliderAction:" destination="JGs-M7-8E1" eventType="valueChanged" id="wMM-GU-atb"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="P5f-Or-pth" firstAttribute="top" secondItem="Bh5-aZ-2uC" secondAttribute="top" constant="130" id="FwT-33-usJ"/>
-                            <constraint firstItem="odj-xV-RXr" firstAttribute="top" secondItem="SZ0-AL-Efr" secondAttribute="bottom" constant="20" id="RdM-eK-oX1"/>
-                            <constraint firstItem="SZ0-AL-Efr" firstAttribute="centerX" secondItem="ct4-SN-Cyz" secondAttribute="centerX" identifier="ID1" id="TXS-B9-La1"/>
-                            <constraint firstItem="TUh-k8-YmY" firstAttribute="top" secondItem="P5f-Or-pth" secondAttribute="bottom" constant="30" id="cdN-Hb-VnE"/>
+                            <constraint firstItem="SZ0-AL-Efr" firstAttribute="top" secondItem="TUh-k8-YmY" secondAttribute="top" id="A3K-DM-fnd"/>
+                            <constraint firstItem="odj-xV-RXr" firstAttribute="top" secondItem="SZ0-AL-Efr" secondAttribute="bottom" constant="25" id="Beu-6I-PWa"/>
+                            <constraint firstItem="TUh-k8-YmY" firstAttribute="centerX" secondItem="ct4-SN-Cyz" secondAttribute="centerX" id="IwY-h7-7uk"/>
+                            <constraint firstItem="vcG-ss-6xH" firstAttribute="top" secondItem="P5f-Or-pth" secondAttribute="bottom" constant="190" id="MCq-B7-tOz"/>
+                            <constraint firstItem="odj-xV-RXr" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SZ0-AL-Efr" secondAttribute="leading" id="SSl-XS-d5f"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="P5f-Or-pth" secondAttribute="trailing" constant="20" symbolic="YES" id="Tsj-lf-Pb1"/>
+                            <constraint firstItem="TUh-k8-YmY" firstAttribute="top" secondItem="P5f-Or-pth" secondAttribute="top" id="Vud-yO-YjT"/>
                             <constraint firstItem="vcG-ss-6xH" firstAttribute="leading" secondItem="Bh5-aZ-2uC" secondAttribute="leading" constant="30" id="dfr-ET-Ikk"/>
-                            <constraint firstItem="P5f-Or-pth" firstAttribute="centerX" secondItem="ct4-SN-Cyz" secondAttribute="centerX" id="kBw-op-Kdw"/>
-                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="odj-xV-RXr" secondAttribute="trailing" constant="20" symbolic="YES" id="lWb-1T-asD"/>
-                            <constraint firstItem="SZ0-AL-Efr" firstAttribute="top" secondItem="TUh-k8-YmY" secondAttribute="bottom" constant="30" id="mHv-BF-6QH"/>
+                            <constraint firstItem="odj-xV-RXr" firstAttribute="centerX" secondItem="SZ0-AL-Efr" secondAttribute="centerX" id="gxO-dd-DsL"/>
                             <constraint firstItem="Bh5-aZ-2uC" firstAttribute="trailing" secondItem="vcG-ss-6xH" secondAttribute="trailing" constant="30" id="mWO-w8-3f1"/>
-                            <constraint firstItem="odj-xV-RXr" firstAttribute="leading" secondItem="SZ0-AL-Efr" secondAttribute="leading" id="pmd-A1-nGq"/>
-                            <constraint firstItem="TUh-k8-YmY" firstAttribute="centerX" secondItem="ct4-SN-Cyz" secondAttribute="centerX" id="siT-fY-qbz"/>
-                            <constraint firstItem="vcG-ss-6xH" firstAttribute="top" secondItem="SZ0-AL-Efr" secondAttribute="bottom" constant="100" id="wLv-FK-Gdw"/>
+                            <constraint firstItem="Bh5-aZ-2uC" firstAttribute="trailing" secondItem="SZ0-AL-Efr" secondAttribute="trailing" constant="20" id="ttX-Jw-w7D"/>
+                            <constraint firstItem="P5f-Or-pth" firstAttribute="top" secondItem="Bh5-aZ-2uC" secondAttribute="top" constant="190" id="vvo-hK-Cjz"/>
+                            <constraint firstItem="P5f-Or-pth" firstAttribute="leading" secondItem="Bh5-aZ-2uC" secondAttribute="leading" constant="20" id="zeb-v2-RUV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bh5-aZ-2uC"/>
                     </view>
                     <connections>
+                        <outlet property="buttonOfSldeConstraint" destination="A3K-DM-fnd" id="E8H-2S-GE5"/>
                         <outlet property="buttonOfSlide" destination="SZ0-AL-Efr" id="bG3-aJ-eey"/>
-                        <outlet property="buttonOfSlideAlignCentr" destination="ct4-SN-Cyz" id="JzR-0W-HRh"/>
                         <outlet property="labelOfSlider" destination="odj-xV-RXr" id="Rro-44-Woj"/>
                         <outlet property="someSlider" destination="vcG-ss-6xH" id="Yxd-7l-zzC"/>
                     </connections>

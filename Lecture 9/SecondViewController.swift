@@ -14,7 +14,8 @@ class SecondViewController: UIViewController {
     @IBOutlet var someSlider: UISlider!
     @IBOutlet var labelOfSlider: UILabel!
     @IBOutlet var buttonOfSlide: UIButton!
-    @IBOutlet var buttonOfSlideAlignCentr: UIView!
+    
+    @IBOutlet var buttonOfSldeConstraint: NSLayoutConstraint!
     
     @IBAction func hideSliderButton(_ sender: UIButton) {
         hiddenSlider()
@@ -22,10 +23,10 @@ class SecondViewController: UIViewController {
     @IBAction func someSliderAction(_ sender: UISlider) {
         //Приводим к Инт, чтоб красивые числа были
         labelOfSlider.text = "\(Int(sender.value))"
-        buttonOfSlideAlignCentr.frame.origin.x = CGFloat(sender.value)
+        buttonOfSldeConstraint.constant = CGFloat(sender.value)
     }
     @IBAction func updateButton(_ sender: UIButton) {
-        buttonOfSlideAlignCentr.frame.origin.x = 0
+        buttonOfSldeConstraint.constant = 0
         someSlider.value = 0
         labelOfSlider.text = "0"
     }
