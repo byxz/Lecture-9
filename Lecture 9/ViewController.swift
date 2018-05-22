@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var labelOfSwitch: UILabel!
+    @IBOutlet var labelOfSwitch: UILabel!
     @IBAction func someSwitch(_ sender: UISwitch) {
         
         let isOn = sender.isOn
@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     }
     @IBOutlet var someSwitch: UISwitch!
     
-    @IBOutlet weak var nextButton: UIButton!
+    @IBOutlet var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

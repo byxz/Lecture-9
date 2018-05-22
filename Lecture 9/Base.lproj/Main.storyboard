@@ -49,6 +49,7 @@
                             <constraint firstItem="mtU-ty-5OR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Px3-hP-zAi"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8qO-49-JlS" secondAttribute="trailing" constant="20" id="R4Q-9S-hTB"/>
                             <constraint firstItem="Z85-wg-QZk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z5J-BU-fDF"/>
+                            <constraint firstItem="8qO-49-JlS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="ziK-K8-UQW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
